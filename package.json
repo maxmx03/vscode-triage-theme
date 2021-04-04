@@ -1,0 +1,30 @@
+{
+    "name": "milianor-theme",
+    "displayName": "Milianor Theme",
+    "description": "milianor dev theme",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.55.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "Milianor Theme",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Milianor-theme.json"
+            }
+        ]
+    },
+    "scripts": {
+        "dev": "node dist/index.js && clear",
+        "watch": "tsc --watch"
+    },
+    "devDependencies": {
+        "@types/node": "^14.14.37",
+        "ts-node": "^9.1.1",
+        "typescript": "^4.2.3"
+    }
+}
