@@ -1,14 +1,15 @@
-import MilianorTheme from "./themes/Milianor-Theme";
-import colors from "./colors";
+import VscodeTheme from "../utils/classes/VscodeTheme";
+import { ideColors, codeColors } from "./colors";
 
-const myTheme = new MilianorTheme();
+const myTheme = new VscodeTheme();
 myTheme.name = "Milianor Theme";
 myTheme.type = "dark";
+myTheme.semanticHighlighting = true;
 myTheme.colors = {
-  "editor.background": colors.editorBackground,
-  "editor.foreground": colors.editorForeground,
-  "activityBarBadge.background": colors.activityBarBadgeBackground,
-  "sideBarTitle.foreground": colors.sideBarTitleForeground,
+  "editor.background": ideColors.editorBackground,
+  "editor.foreground": ideColors.editorForeground,
+  "activityBarBadge.background": ideColors.activityBarBadgeBackground,
+  "sideBarTitle.foreground": ideColors.sideBarTitleForeground,
 };
 myTheme.tokenColors = [
   {
@@ -16,14 +17,21 @@ myTheme.tokenColors = [
     scope: ["comment", "punctuation.definition.comment"],
     settings: {
       fontStyle: "italic",
-      foreground: "#546E7A",
+      foreground: codeColors.comment,
+    },
+  },
+  {
+    name: "Constant",
+    scope: ["constant", "variable.other.constant"],
+    settings: {
+      foreground: codeColors.constant,
     },
   },
   {
     name: "Variables",
     scope: ["variable", "string constant.other.placeholder"],
     settings: {
-      foreground: "#EEFFFF",
+      foreground: codeColors.variable,
     },
   },
   {
@@ -37,20 +45,19 @@ myTheme.tokenColors = [
     name: "Invalid",
     scope: ["invalid", "invalid.illegal"],
     settings: {
-      foreground: "#FF5370",
+      foreground: codeColors.invalid,
     },
   },
   {
     name: "Keyword, Storage",
-    scope: ["keyword", "storage.type", "storage.modifier"],
+    scope: ["keyword", "keyword.control", "storage.type", "storage.modifier"],
     settings: {
-      foreground: "#C792EA",
+      foreground: codeColors.storage,
     },
   },
   {
     name: "Operator, Misc",
     scope: [
-      "keyword.control",
       "constant.other.color",
       "punctuation",
       "meta.tag",
@@ -64,41 +71,40 @@ myTheme.tokenColors = [
       "keyword.other.substitution",
     ],
     settings: {
-      foreground: "#89DDFF",
+      foreground: codeColors.operatorMisc,
     },
   },
   {
     name: "Tag",
     scope: ["entity.name.tag", "meta.tag.sgml", "markup.deleted.git_gutter"],
     settings: {
-      foreground: "#f07178",
+      foreground: codeColors.tag,
     },
   },
   {
     name: "Function, Special Method",
     scope: [
-      "entity.name.function",
       "meta.function-call",
       "variable.function",
       "support.function",
       "keyword.other.special-method",
     ],
     settings: {
-      foreground: "#82AAFF",
+      foreground: "#fff",
     },
   },
   {
     name: "Block Level Variables",
     scope: ["meta.block variable.other"],
     settings: {
-      foreground: "#f07178",
+      foreground: codeColors.blockVar,
     },
   },
   {
     name: "Other Variable, String Link",
     scope: ["support.other.variable", "string.other.link"],
     settings: {
-      foreground: "#f07178",
+      foreground: codeColors.otherVar,
     },
   },
   {
@@ -114,13 +120,24 @@ myTheme.tokenColors = [
       "keyword.other",
     ],
     settings: {
-      foreground: "#F78C6C",
+      foreground: codeColors.argument,
     },
   },
   {
-    name: "String, Symbols, Inherited Class, Markup Heading",
+    name: "String",
     scope: [
       "string",
+      "punctuation.definition.string.begin.js",
+      "punctuation.definition.string.end.js",
+      "string.quoted.double.js",
+    ],
+    settings: {
+      foreground: codeColors.string,
+    },
+  },
+  {
+    name: "Symbols, Inherited Class, Markup Heading",
+    scope: [
       "constant.other.symbol",
       "constant.other.key",
       "entity.other.inherited-class",
@@ -129,7 +146,7 @@ myTheme.tokenColors = [
       "meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js",
     ],
     settings: {
-      foreground: "#C3E88D",
+      foreground: codeColors.inheritedClass,
     },
   },
   {
@@ -145,7 +162,14 @@ myTheme.tokenColors = [
       "support.type.sys-types",
     ],
     settings: {
-      foreground: "#FFCB6B",
+      foreground: codeColors.class,
+    },
+  },
+  {
+    name: "Function, Entity",
+    scope: ["entity.name.function"],
+    settings: {
+      foreground: codeColors.functionEntity,
     },
   },
   {
