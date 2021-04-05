@@ -6,7 +6,7 @@ const { html: ht } = codeColors;
 export const html: Array<TColors> = [
   {
     name: "HTML Meta",
-    scope: ["meta.tag.metadata.doctype.html", "punctuation.definition.entity.html"],
+    scope: ["meta.tag.metadata.doctype.html", "punctuation.definition.entity.html", "variable.control.import.include.pug"],
     settings: {
       foreground: ht.meta
     },
@@ -20,7 +20,7 @@ export const html: Array<TColors> = [
   },
   {
     name: "HTML Attribute",
-    scope: ["entity.other.attribute-name.html"],
+    scope: ["entity.other.attribute-name.html", "entity.other.attribute-name.tag.pug"],
     settings: {
       foreground: ht.attribute
     },
@@ -39,4 +39,11 @@ export const html: Array<TColors> = [
       foreground: ht.constant
     },
   },
+  {
+    name: "PUG String",
+    scope: ["string.quoted.pug"],
+    settings: {
+      foreground: ht.string
+    },
+  }
 ];

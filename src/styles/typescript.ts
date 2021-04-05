@@ -95,7 +95,7 @@ export const typescript: Array<TColors> = [
   },
   {
     name: "Class",
-    scope: ["entity.name.type.class"],
+    scope: ["entity.name.type.class", "support.class.component"],
     settings: {
       foreground: ts.class,
     },
@@ -109,7 +109,7 @@ export const typescript: Array<TColors> = [
   },
   {
     name: "Class Method",
-    scope: ["entity.name.function.member", "meta.function-call"],
+    scope: ["entity.name.function.member", "meta.function-call", "meta.tag.attributes"],
     settings: {
       foreground: ts.objectMethod,
     },
@@ -127,6 +127,24 @@ export const typescript: Array<TColors> = [
     settings: {
       foreground: ts.interface,
     },
-  }
+  },
+  {
+    name: "Regex",
+    scope: [
+      "punctuation.definition.character-class.regexp",
+    ],
+    settings: {
+      foreground: ts.regex,
+    },
+  },
+  {
+    name: "Regex String",
+    scope: [
+      "string.regexp.js"
+    ],
+    settings: {
+      foreground: ts.regexString,
+    },
+  },
 ];
 

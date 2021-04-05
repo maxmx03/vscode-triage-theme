@@ -71,11 +71,11 @@ const greys = {
 };
 
 const browns = {
-  brown1: "#8e7f7f",
-  brown2: "#897853",
-  brown3: "#865858",
-  brown4: "#7b3c3c",
-  brown5: "#4a3933",
+  brown1: "#eabf9f",
+  brown2: "#b68973",
+  brown3: "#c2b092",
+  brown4: "#91684a",
+  brown5: "#92817a",
 };
 
 export const pallet = {

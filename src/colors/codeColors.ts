@@ -17,7 +17,9 @@ export const codeColors = {
     objectMethod: pallet.green4,
     this: pallet.purple3,
     interface: pallet.blue3,
-    declareVar: pallet.red2
+    declareVar: pallet.red2,
+    regex: pallet.blue1,
+    regexString: pallet.purple3
   },
   json: {
     comment: pallet.purple3,
@@ -35,17 +37,29 @@ export const codeColors = {
     tag: pallet.orange5,
     attribute: pallet.purple3,
     text: pallet.white2,
-    constant: pallet.yellow2
+    constant: pallet.yellow2,
+    string: pallet.green5
   },
-  css: {
-    meta: pallet.pink3,
+  scss: {
+    keyword: pallet.pink3,
+    meta: pallet.white2,
     tag: pallet.orange5,
+    custom: pallet.brown1,
     class: pallet.yellow3,
     id: pallet.red2,
     pseudo: pallet.yellow5,
     property: pallet.blue4,
     propertyValue: pallet.purple3,
     unit: pallet.green4,
-    variable: pallet.pink4
+    variable: pallet.pink4,
+    variable2: pallet.blue1,
+    comment: pallet.grey2,
+    string: pallet.green5,
+    bracket: pallet.blue1,
+    function: pallet.yellow2,
+  },
+  gitGnoreAtr: {
+    string: pallet.orange5,
+    hash: pallet.red2,
   }
 };

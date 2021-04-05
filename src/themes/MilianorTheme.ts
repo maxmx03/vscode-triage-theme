@@ -1,6 +1,6 @@
 import VsCodeTheme from "../utils/classes/VsCodeTheme";
 import { ideColors } from "../colors";
-import { typescript, json, xml, html, css } from "../styles";
+import { typescript, json, xml, html, scss, gitGnoreAtr } from "../styles";
 
 const myTheme = new VsCodeTheme();
 myTheme.name = "Milianor Theme";
@@ -16,6 +16,13 @@ myTheme.colors = {
   "statusBar.background": ideColors.statusBarBackground,
 };
 
-myTheme.tokenColors = [...typescript, ...json, ...xml, ...html, ...css];
+myTheme.tokenColors = [
+  ...typescript,
+  ...json,
+  ...xml,
+  ...html,
+  ...scss,
+  ...gitGnoreAtr,
+];
 
 export default myTheme;
