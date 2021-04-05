@@ -1,7 +1,7 @@
 import { ITheme } from "../interfaces";
 import { TColors, IColors } from "../types";
 
-export default class VscodeTheme implements ITheme {
+export default class VsCodeTheme implements ITheme {
   public name: string;
   public type: string;
   public semanticHighlighting: boolean;
