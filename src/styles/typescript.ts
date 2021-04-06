@@ -49,7 +49,7 @@ export const typescript: Array<TColors> = [
   },
   {
     name: "String",
-    scope: ["string.quoted.double", "string.quoted.single"],
+    scope: ["string.quoted.double", "string.quoted.single", "string.template"],
     settings: {
       foreground: ts.string,
     },
