@@ -12,23 +12,14 @@ export const typescript: Array<TColors> = [
     },
   },
   {
-    name: "Imports, New, Keywords, Primitive, Comparasion, Suport Variable",
+    name: "Imports, New, Keywords, Comparasion, Suport Variable",
     scope: [
-      "meta.import",
       "keyword.control",
+      "keyword.operator",
       "new.expr",
-      "keyword.operator.logical",
       "storage.modifier",
-      "support.type.primitive",
       "support.variable.property",
-      "keyword.operator.comparison",
-      "keyword.operator.relational",
-      "support.type.object.module",
-      "keyword.operator.spread",
-      "constant.language.import-export-all",
-      "keyword.operator.assignment",
-      "punctuation.separator.key-value",
-      "punctuation.separator.comma",
+      "punctuation.separator",
       "punctuation.terminator.statement",
     ],
     settings: {
@@ -64,19 +55,15 @@ export const typescript: Array<TColors> = [
     },
   },
   {
-    name: "Storage",
-    scope: ["storage.type"],
+    name: "Storage, Primitive",
+    scope: ["storage.type", "support.type"],
     settings: {
       foreground: ts.storage,
     },
   },
   {
     name: "Constant, Boolean",
-    scope: [
-      "variable.other.constant",
-      "constant.language.boolean",
-      "variable.other.object",
-    ],
+    scope: ["variable.other.constant", "constant", "variable.other.object"],
     settings: {
       foreground: ts.constant,
     },
