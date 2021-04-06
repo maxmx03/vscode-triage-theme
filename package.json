@@ -1,33 +1,39 @@
 {
-    "name": "milianor-theme",
-    "displayName": "Milianor Theme",
-    "description": "milianor dev theme",
-    "version": "0.0.1",
-    "engines": {
-        "vscode": "^1.55.0"
-    },
-    "categories": [
-        "Themes"
-    ],
-    "contributes": {
-        "themes": [
-            {
-                "label": "Milianor Theme",
-                "uiTheme": "vs-dark",
-                "path": "./themes/Milianor-theme.json"
-            }
-        ]
-    },
-    "scripts": {
-        "dev": "nodemon dist/index.js && clear",
-        "watch": "tsc --watch"
-    },
-    "devDependencies": {
-        "@types/express": "^4.17.11",
-        "@types/node": "^14.14.37",
-        "express": "^4.17.1",
-        "nodemon": "^2.0.7",
-        "ts-node": "^9.1.1",
-        "typescript": "^4.2.3"
-    }
+  "name": "milianor-theme",
+  "displayName": "Milianor Theme",
+  "description": "milianor dev theme",
+  "publisher": "MaxMilianoDelCantoQuezada",
+  "version": "0.0.2",
+  "engines": {
+    "vscode": "^1.55.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maxmx03/milianor-theme"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "label": "Milianor Theme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Milianor-theme.json"
+      }
+    ]
+  },
+  "scripts": {
+    "dev": "nodemon dist/index.js && clear",
+    "watch": "tsc --watch"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.11",
+    "@types/node": "^14.14.37",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.3",
+    "vsce": "^1.87.1"
+  }
 }

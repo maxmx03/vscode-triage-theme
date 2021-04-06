@@ -7,7 +7,6 @@ export const scss: Array<TColors> = [
   {
     name: "SCSS Keywords, Interpolation",
     scope: [
-      "keyword.control",
       "keyword.other.default",
       "variable.interpolation.scss",
     ],

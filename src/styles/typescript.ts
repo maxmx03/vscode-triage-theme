@@ -15,18 +15,21 @@ export const typescript: Array<TColors> = [
     name: "Imports, New, Keywords, Primitive, Comparasion, Suport Variable",
     scope: [
       "meta.import",
-      "keyword.control.export",
-      "keyword.control.default",
+      "keyword.control",
       "new.expr",
-      "keyword.control.flow",
-      "keyword.control.conditional",
       "keyword.operator.logical",
       "storage.modifier",
       "support.type.primitive",
       "support.variable.property",
       "keyword.operator.comparison",
       "keyword.operator.relational",
-      "support.type.object.module"
+      "support.type.object.module",
+      "keyword.operator.spread",
+      "constant.language.import-export-all",
+      "keyword.operator.assignment",
+      "punctuation.separator.key-value",
+      "punctuation.separator.comma",
+      "punctuation.terminator.statement",
     ],
     settings: {
       foreground: ts.importMetaNewBoolean,
@@ -72,7 +75,7 @@ export const typescript: Array<TColors> = [
     scope: [
       "variable.other.constant",
       "constant.language.boolean",
-      "variable.other.object"
+      "variable.other.object",
     ],
     settings: {
       foreground: ts.constant,
@@ -105,11 +108,15 @@ export const typescript: Array<TColors> = [
     scope: ["variable.object.property", "meta.object-literal.key"],
     settings: {
       foreground: ts.attributes,
-    }
+    },
   },
   {
     name: "Class Method",
-    scope: ["entity.name.function.member", "meta.function-call", "meta.tag.attributes"],
+    scope: [
+      "entity.name.function.member",
+      "meta.function-call",
+      "meta.tag.attributes",
+    ],
     settings: {
       foreground: ts.objectMethod,
     },
@@ -130,21 +137,16 @@ export const typescript: Array<TColors> = [
   },
   {
     name: "Regex",
-    scope: [
-      "punctuation.definition.character-class.regexp",
-    ],
+    scope: ["punctuation.definition.character-class.regexp"],
     settings: {
       foreground: ts.regex,
     },
   },
   {
     name: "Regex String",
-    scope: [
-      "string.regexp.js"
-    ],
+    scope: ["string.regexp.js"],
     settings: {
       foreground: ts.regexString,
     },
   },
 ];
-
