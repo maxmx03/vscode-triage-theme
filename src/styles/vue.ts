@@ -5,18 +5,17 @@ const { vue: v } = codeColors;
 
 export const vue: Array<TColors> = [
   {
-    name: "Vue Html",
-    scope: ["expression.embedded.vue"],
+    name: "Vue Default Color Expressions, Directive",
+    scope: ["expression.embedded.vue", "source.directive.vue"],
     settings: {
-      foreground: v.expression,
+      foreground: v.default,
     },
   },
   {
     name: "Vue Class Types",
     scope: ["support.class.builtin.js"],
     settings: {
-      foreground: v.types
-    }
+      foreground: v.types,
+    },
   },
 ];
-

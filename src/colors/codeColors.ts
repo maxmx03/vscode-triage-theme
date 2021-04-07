@@ -26,7 +26,7 @@ export const codeColors = {
     classComponent: colors.blue,
   },
   vue: {
-    expression: special.vue,
+    default: special.vue,
     types: colors.cyan,
     test: colors.red,
   },
