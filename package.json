@@ -3,7 +3,7 @@
   "displayName": "Milianor Theme",
   "description": "milianor dev theme",
   "publisher": "MaxMilianoDelCantoQuezada",
-  "version": "0.1.7",
+  "version": "0.1.9",
   "engines": {
     "vscode": "^1.55.0"
   },
@@ -20,10 +20,16 @@
         "label": "Milianor Theme",
         "uiTheme": "vs-dark",
         "path": "./themes/Milianor-theme.json"
-      }, {
+      },
+      {
         "label": "Milianor Theme Soft",
         "uiTheme": "vs-dark",
         "path": "./themes/Milianor-theme-soft.json"
+      },
+      {
+        "label": "Milianor Theme Vibrant",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Milianor-theme-vibrant.json"
       }
     ]
   },

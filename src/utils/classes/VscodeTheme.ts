@@ -35,17 +35,47 @@ export default class VsCodeTheme implements ITheme {
     return path.resolve(folderName, fileName);
   }
 
-  makeThemeSoft(theme: VsCodeTheme): string {
+  makeThemeVibrant(theme: VsCodeTheme) {
     return JSON.stringify({
       ...theme,
+      colors: {
+        ...theme.colors,
+        "editor.background": tinycolor(theme.colors["editor.background"])
+          .saturate()
+          .toHexString(),
+      },
       tokenColors: theme.tokenColors.map((object) => {
         return {
           ...object,
           settings: {
             ...object.settings,
             foreground: tinycolor(object.settings.foreground)
-              .desaturate(20)
-              .toString(),
+              .saturate()
+              .toHexString(),
+          },
+        };
+      }),
+    });
+  }
+
+  makeThemeSoft(theme: VsCodeTheme): string {
+    return JSON.stringify({
+      ...theme,
+      colors: {
+        ...theme.colors,
+        "editor.background": tinycolor(theme.colors["editor.background"])
+          .darken(2)
+          .desaturate()
+          .toHexString(),
+      },
+      tokenColors: theme.tokenColors.map((object) => {
+        return {
+          ...object,
+          settings: {
+            ...object.settings,
+            foreground: tinycolor(object.settings.foreground)
+              .desaturate(15)
+              .toHexString(),
           },
         };
       }),
@@ -55,11 +85,16 @@ export default class VsCodeTheme implements ITheme {
   generateTheme() {
     const myTheme = JSON.stringify(this);
     const myThemeSoft = this.makeThemeSoft(this);
+    const mtThemeVibrant = this.makeThemeVibrant(this);
 
     this.writeJsonFile(myTheme, this.saveFile("themes", "Milianor-theme.json"));
     this.writeJsonFile(
       myThemeSoft,
       this.saveFile("themes", "Milianor-theme-soft.json")
+    );
+    this.writeJsonFile(
+      mtThemeVibrant,
+      this.saveFile("themes", "Milianor-theme-vibrant.json")
     );
   }
 }

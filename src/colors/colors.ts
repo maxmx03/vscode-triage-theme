@@ -6,7 +6,6 @@ export const colors = {
   turquoise: "#1bf5af",
   cyan: "#88e1f2",
   blue: "#4fc1e9",
-  lightYellow: "#f0e48e",
   yellow: "#fffb97",
   gold: "#fdb827",
   red: "#f85959",
@@ -17,3 +16,7 @@ export const colors = {
   grey: "#bbbbbb",
   white: "#fafafa",
 };
+
+export const special = {
+  vue: "#42b983",
+}

@@ -1,4 +1,4 @@
-import { colors } from "./colors";
+import { colors, special } from "./colors";
 
 export const codeColors = {
   typescript: {
@@ -11,7 +11,7 @@ export const codeColors = {
     storage: colors.red,
     constant: colors.orange,
     function: colors.yellow,
-    params: colors.lightYellow,
+    params: colors.gold,
     class: colors.blue,
     attributes: colors.purple,
     objectMethod: colors.limon,
@@ -20,25 +20,38 @@ export const codeColors = {
     declareVar: colors.red,
     regex: colors.purple,
     regexString: colors.darkerPink,
+    test: colors.red,
+  },
+  react: {
+    classComponent: colors.blue,
+  },
+  vue: {
+    expression: special.vue,
+    types: colors.cyan,
+    test: colors.red,
   },
   json: {
     comment: colors.grey,
     brackets: colors.white,
     constant: colors.orange,
+    test: colors.red,
   },
   xml: {
     meta: colors.darkerPink,
     version: colors.darkerPink,
     tag: colors.orange,
     attribute: colors.purple,
+    test: colors.red,
   },
   html: {
     meta: colors.darkerPink,
     tag: colors.orange,
+    vueTag: colors.green,
     attribute: colors.purple,
     text: colors.white,
     constant: colors.yellow,
     string: colors.green,
+    test: colors.red,
   },
   scss: {
     keyword: colors.pink,
@@ -49,7 +62,7 @@ export const codeColors = {
     id: colors.red,
     pseudo: colors.cyan,
     property: colors.purple,
-    propertyValue: colors.white,
+    propertyValue: colors.gold,
     unit: colors.limon,
     variable: colors.darkerPink,
     variable2: colors.blue,
@@ -57,9 +70,11 @@ export const codeColors = {
     string: colors.green,
     bracket: colors.white,
     function: colors.yellow,
+    test: colors.red,
   },
   gitGnoreAtr: {
     string: colors.orange,
     hash: colors.red,
+    test: colors.red,
   },
 };

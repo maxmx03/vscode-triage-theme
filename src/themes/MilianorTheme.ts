@@ -1,6 +1,15 @@
 import VsCodeTheme from "../utils/classes/VsCodeTheme";
 import { ideColors } from "../colors";
-import { typescript, json, xml, html, scss, gitGnoreAtr } from "../styles";
+import {
+  typescript,
+  react,
+  vue,
+  json,
+  xml,
+  html,
+  scss,
+  gitGnoreAtr,
+} from "../styles";
 
 const myTheme = new VsCodeTheme();
 
@@ -19,6 +28,8 @@ myTheme.colors = {
 
 myTheme.tokenColors = [
   ...typescript,
+  ...react,
+  ...vue,
   ...json,
   ...xml,
   ...html,

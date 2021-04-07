@@ -55,8 +55,8 @@ export const typescript: Array<TColors> = [
     },
   },
   {
-    name: "Storage, Primitive",
-    scope: ["storage.type", "support.type"],
+    name: "Storage",
+    scope: ["storage.type"],
     settings: {
       foreground: ts.storage,
     },
@@ -85,7 +85,7 @@ export const typescript: Array<TColors> = [
   },
   {
     name: "Class",
-    scope: ["entity.name.type.class", "support.class.component"],
+    scope: ["entity.name.type.class"],
     settings: {
       foreground: ts.class,
     },
@@ -116,8 +116,8 @@ export const typescript: Array<TColors> = [
     },
   },
   {
-    name: "Interface, Types",
-    scope: ["entity.name.type.interface", "entity.name.type"],
+    name: "Interface, Primitive Types",
+    scope: ["entity.name.type", "support.type"],
     settings: {
       foreground: ts.interface,
     },
