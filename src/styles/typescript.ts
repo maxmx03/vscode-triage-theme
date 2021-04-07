@@ -12,15 +12,15 @@ export const typescript: Array<TColors> = [
     },
   },
   {
-    name: "Imports, New, Keywords, Comparasion, Suport Variable",
+    name: "Imports, New, Keywords, Comparasion, Suport Variable, Decorator",
     scope: [
       "keyword.control",
       "keyword.operator",
       "new.expr",
       "storage.modifier",
-      "support.variable.property",
       "punctuation.separator",
-      "punctuation.terminator.statement",
+      "punctuation.decorator.ts",
+      "punctuation.terminator.statement"
     ],
     settings: {
       foreground: ts.importMetaNewBoolean,
