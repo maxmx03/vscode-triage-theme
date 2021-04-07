@@ -1,21 +1,18 @@
-import dotenv from "dotenv";
-dotenv.config();
 import express from "express";
 import myTheme from "./themes/MilianorTheme";
-import path from "path";
 
 const app = express();
 const port = 4001;
-const style =
-  process.env.STYLE === "soft"
-    ? `Milianor-theme-${process.env.STYLE}.json`
-    : "Milianor-theme.json";
-const theme = path.resolve("themes", style);
+
+app.use(express.static("public"));
 
 app.get("/", (req, res) => {
-  const style = process.env.STYLE ?? "normal";
-  myTheme.generateTheme(style);
-  res.sendFile(theme);
+  res.render("index.html");
+});
+
+app.get("/generate", (req, res) => {
+  myTheme.generateTheme();
+  res.redirect("/");
 });
 
 app.listen(port, () => {

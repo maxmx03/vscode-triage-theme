@@ -1,15 +1,11 @@
-import dotenv from "dotenv";
-dotenv.config();
-import ColorPallete from "../utils/classes/ColorPallete";
+import { colors } from "./colors";
 
-const style = process.env.STYLE ?? "normal";
-ColorPallete.generatePallete(style);
 export const ideColors = {
-  editorBackground: ColorPallete.colors.background,
-  editorForeground: ColorPallete.colors.foreground,
-  activityBarBadgeBackground: ColorPallete.colors.red,
-  sideBarTitleForeground: ColorPallete.colors.grey,
-  activityBarActiveBorder: ColorPallete.colors.red,
-  activityBarForeground: ColorPallete.colors.red,
-  statusBarBackground: ColorPallete.colors.red,
+  editorBackground: colors.background,
+  editorForeground: colors.foreground,
+  activityBarBadgeBackground: colors.red,
+  sideBarTitleForeground: colors.grey,
+  activityBarActiveBorder: colors.red,
+  activityBarForeground: colors.red,
+  statusBarBackground: colors.red,
 };

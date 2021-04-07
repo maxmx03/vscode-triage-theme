@@ -3,6 +3,7 @@ import { ideColors } from "../colors";
 import { typescript, json, xml, html, scss, gitGnoreAtr } from "../styles";
 
 const myTheme = new VsCodeTheme();
+
 myTheme.name = "Milianor Theme";
 myTheme.type = "dark";
 myTheme.semanticHighlighting = true;
