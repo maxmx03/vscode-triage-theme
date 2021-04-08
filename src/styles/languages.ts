@@ -21,7 +21,6 @@ export const languages: Array<TColors> = [
       "entity.other.attribute-name.placeholder",
       "entity.other.attribute-name.pseudo-class",
       "entity.other.attribute-name.pseudo-element",
-      "punctuation",
       "meta.group.double.toml",
       "meta.group.toml",
       "meta.object-binding-pattern-variable",
@@ -41,7 +40,6 @@ export const languages: Array<TColors> = [
       "punctuation.separator.pointer-access",
       "punctuation.separator.slice",
       "string.unquoted.heredoc",
-      "punctuation.definition.string",
       "support.other.chomping-indicator.yaml",
       "punctuation.separator.annotation",
       "support.type.object.module",
@@ -140,7 +138,7 @@ export const languages: Array<TColors> = [
   },
   {
     name: "String",
-    scope: ["string.quoted.double", "string.quoted.single", "string.template"],
+    scope: ["string.quoted.double", "string.quoted.single", "string.template", "punctuation.definition.string"],
     settings: {
       foreground: ls.string,
     },
