@@ -4,8 +4,8 @@
 - working in progress...
 
 # Default
-![Screenshot](url)
+![Screenshot](https://raw.githubusercontent.com/maxmx03/milianor-theme/master/default.png)
 
 # Vibrant
-![Screenshot](url)
+![Screenshot](https://raw.githubusercontent.com/maxmx03/milianor-theme/master/vibrant.png)
 
