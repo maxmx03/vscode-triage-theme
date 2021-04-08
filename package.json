@@ -3,7 +3,7 @@
   "displayName": "Milianor Theme",
   "description": "milianor dev theme",
   "publisher": "MaxMilianoDelCantoQuezada",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "engines": {
     "vscode": "^1.55.0"
   },

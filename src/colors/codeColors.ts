@@ -65,7 +65,9 @@ export const codeColors = {
   },
   scss: {
     keyword: colors.pink,
+    type: colors.turquoise,
     meta: colors.blue,
+    metaScss: colors.darkerPink,
     tag: colors.orange,
     custom: colors.turquoise,
     class: colors.blue,

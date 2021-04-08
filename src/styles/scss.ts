@@ -6,24 +6,46 @@ const { scss: sc } = codeColors;
 export const scss: Array<TColors> = [
   {
     name: "SCSS Keywords, Interpolation",
-    scope: [
-      "keyword.other",
-      "variable.interpolation.scss",
-    ],
+    scope: ["keyword.other", "variable.interpolation.scss"],
     settings: {
       foreground: sc.keyword,
+    },
+  },
+  {
+    name: "Suport Type",
+    scope: [
+      "support.type.vendored.property-name.css",
+    ],
+    settings: {
+      foreground: sc.type,
+    },
+  },
+  {
+    name: "CSS Meta",
+    scope: [
+      "meta.selector",
+      "meta.property-list.css",
+      "meta.at-rule.media.header",
+      "meta.definition.variable",
+      "punctuation.separator.list.comma.css",
+      "punctuation.separator.key-value.css"
+    ],
+    settings: {
+      foreground: sc.meta,
     },
   },
   {
     name: "SCSS Meta",
     scope: [
       "meta.selector",
-      "meta.property-list",
+      "meta.property-list.scss",
       "meta.at-rule.media.header",
       "meta.definition.variable",
+      "punctuation.separator.list.comma.scss",
+      "punctuation.separator.key-value.scss"
     ],
     settings: {
-      foreground: sc.meta,
+      foreground: sc.metaScss,
     },
   },
   {
@@ -125,10 +147,7 @@ export const scss: Array<TColors> = [
   },
   {
     name: "SCSS Functions",
-    scope: [
-      "meta.function",
-      "support.function"
-    ],
+    scope: ["meta.function", "support.function"],
     settings: {
       foreground: sc.function,
     },
