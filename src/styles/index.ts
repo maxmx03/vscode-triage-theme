@@ -1,4 +1,4 @@
-export * from "./typescript";
+export * from "./languages";
 export * from "./json";
 export * from "./xml";
 export * from "./html";
@@ -6,3 +6,4 @@ export * from "./scss";
 export * from "./gitgnore";
 export * from "./react";
 export * from "./vue";
+export * from "./markdown";

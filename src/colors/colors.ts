@@ -19,4 +19,5 @@ export const colors = {
 
 export const special = {
   vue: "#42b983",
-}
+  php: "#a06ee1",
+};

@@ -1,7 +1,7 @@
 import VsCodeTheme from "../utils/classes/VsCodeTheme";
 import { ideColors } from "../colors";
 import {
-  typescript,
+  languages,
   react,
   vue,
   json,
@@ -9,6 +9,7 @@ import {
   html,
   scss,
   gitGnoreAtr,
+  markdown,
 } from "../styles";
 
 const myTheme = new VsCodeTheme();
@@ -27,7 +28,7 @@ myTheme.colors = {
 };
 
 myTheme.tokenColors = [
-  ...typescript,
+  ...languages,
   ...react,
   ...vue,
   ...json,
@@ -35,6 +36,7 @@ myTheme.tokenColors = [
   ...html,
   ...scss,
   ...gitGnoreAtr,
+  ...markdown,
 ];
 
 export default myTheme;
