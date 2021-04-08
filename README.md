@@ -1,4 +1,11 @@
 # Milianor Theme
 
-- My theme for web development with javascript, python, React, Angular, Vue
+- My theme for web development.
+- working in progress...
+
+# Default
+![Screenshot](url)
+
+# Vibrant
+![Screenshot](url)
 
