@@ -158,8 +158,6 @@ export const languages: Array<TColors> = [
   {
     name: "Variables and object properties",
     scope: [
-      "variable",
-      "constant.other.key.perl",
       "support.variable.property",
       "variable.other.constant.js",
       "variable.other.constant.ts",

@@ -17,5 +17,5 @@ export const vue: Array<TColors> = [
     settings: {
       foreground: v.types,
     },
-  },
+  }
 ];

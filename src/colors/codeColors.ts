@@ -36,6 +36,8 @@ export const codeColors = {
   vue: {
     default: special.vue,
     types: colors.cyan,
+    variables: colors.blue,
+    other: colors.darkerPink,
     test: colors.red,
   },
   json: {
@@ -63,7 +65,7 @@ export const codeColors = {
   },
   scss: {
     keyword: colors.pink,
-    meta: colors.white,
+    meta: colors.blue,
     tag: colors.orange,
     custom: colors.turquoise,
     class: colors.blue,
