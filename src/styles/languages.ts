@@ -301,6 +301,7 @@ export const languages: Array<TColors> = [
     name: "Interface, Primitive Types",
     scope: [
       "entity.name.type",
+      "support.type.primitive",
       "keyword.primitive-datatypes.swift",
       "keyword.type.cs",
       "meta.protocol-list.objc",
