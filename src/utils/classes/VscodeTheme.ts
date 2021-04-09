@@ -74,7 +74,7 @@ export default class VsCodeTheme implements ITheme {
           settings: {
             ...object.settings,
             foreground: tinycolor(object.settings.foreground)
-              .desaturate(15)
+              .desaturate(20)
               .toHexString(),
           },
         };
