@@ -3,9 +3,10 @@
 - My theme for web development.
 - working in progress...
 
-# Default
-![Screenshot](https://raw.githubusercontent.com/maxmx03/milianor-theme/master/default.png)
+# Dark Desert
 
-# Vibrant
-![Screenshot](https://raw.githubusercontent.com/maxmx03/milianor-theme/master/vibrant.png)
+![Screenshot](https://raw.githubusercontent.com/maxmx03/milianor-theme/master/images/darkdesert.png)
 
+# Dark Aqua
+
+![Screenshot](https://raw.githubusercontent.com/maxmx03/milianor-theme/master/images/darkaquapng.png)
