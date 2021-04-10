@@ -1,12 +1,12 @@
-import { codeColors } from "../colors";
-import { TColors } from "../utils/types";
+import { desertCodeColors } from "../../colors";
+import { TColors } from "../../utils/types";
 
-const { scss: sc } = codeColors;
+const { scss: sc } = desertCodeColors;
 
 export const scss: Array<TColors> = [
   {
     name: "SCSS Keywords, Interpolation",
-    scope: ["keyword.other", "variable.interpolation.scss"],
+    scope: ["keyword.other", "variable.interpolation.scss", "support.constant.media"],
     settings: {
       foreground: sc.keyword,
     },

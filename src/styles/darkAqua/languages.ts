@@ -1,7 +1,7 @@
-import { codeColors } from "../colors";
-import { TColors } from "../utils/types";
+import { aquaCodeColors } from "../../colors";
+import { TColors } from "../../utils/types";
 
-const { languages: ls } = codeColors;
+const { languages: ls } = aquaCodeColors;
 
 export const languages: Array<TColors> = [
   {
@@ -320,6 +320,7 @@ export const languages: Array<TColors> = [
       "storage.type.php",
       "storage.type.haskell",
       "storage.type.ocaml",
+      "support.type.builtin" // testar
     ],
     settings: {
       foreground: ls.interface,

@@ -1,7 +1,7 @@
-import { codeColors } from "../colors";
-import { TColors } from "../utils/types";
+import { desertCodeColors } from "../../colors";
+import { TColors } from "../../utils/types";
 
-const { xml: xm } = codeColors;
+const { xml: xm } = desertCodeColors;
 
 export const xml: Array<TColors> = [
   {

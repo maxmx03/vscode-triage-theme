@@ -2,13 +2,13 @@ import path from "path";
 import fs from "fs";
 import tinycolor from "tinycolor2";
 import { ITheme } from "../interfaces";
-import { TColors, IColors } from "../types";
+import { TColors } from "../types";
 
 export default class VsCodeTheme implements ITheme {
   public name: string;
   public type: string;
   public semanticHighlighting: boolean;
-  public colors: IColors;
+  public colors: object;
   public tokenColors: Array<TColors>;
 
   constructor(
@@ -31,7 +31,7 @@ export default class VsCodeTheme implements ITheme {
     });
   }
 
-  saveFile(folderName: string, fileName: string) {
+  saveFile(folderName: string, fileName: string): string {
     return path.resolve(folderName, fileName);
   }
 
@@ -82,19 +82,13 @@ export default class VsCodeTheme implements ITheme {
     });
   }
 
-  generateTheme() {
+  generateTheme(opts: { default: string; soft: string; vibrant: string }) {
     const myTheme = JSON.stringify(this);
     const myThemeSoft = this.makeThemeSoft(this);
     const mtThemeVibrant = this.makeThemeVibrant(this);
 
-    this.writeJsonFile(myTheme, this.saveFile("themes", "Milianor-theme.json"));
-    this.writeJsonFile(
-      myThemeSoft,
-      this.saveFile("themes", "Milianor-theme-soft.json")
-    );
-    this.writeJsonFile(
-      mtThemeVibrant,
-      this.saveFile("themes", "Milianor-theme-vibrant.json")
-    );
+    this.writeJsonFile(myTheme, this.saveFile("themes", opts.default));
+    this.writeJsonFile(myThemeSoft, this.saveFile("themes", opts.soft));
+    this.writeJsonFile(mtThemeVibrant, this.saveFile("themes", opts.vibrant));
   }
 }

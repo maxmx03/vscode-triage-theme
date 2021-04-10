@@ -1,7 +1,7 @@
-import { codeColors } from "../colors";
-import { TColors } from "../utils/types";
+import { desertCodeColors } from "../../colors";
+import { TColors } from "../../utils/types";
 
-const { gitGnoreAtr: git } = codeColors;
+const { gitGnoreAtr: git } = desertCodeColors;
 
 export const gitGnoreAtr: Array<TColors> = [
   {

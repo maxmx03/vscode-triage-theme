@@ -1,5 +1,5 @@
 import express from "express";
-import myTheme from "./themes/MilianorTheme";
+import { darkDesert, darkAqua } from "./themes";
 
 const app = express();
 const port = 4001;
@@ -11,7 +11,18 @@ app.get("/", (req, res) => {
 });
 
 app.get("/generate", (req, res) => {
-  myTheme.generateTheme();
+  darkDesert.generateTheme({
+    default: "Milianor-desert.json",
+    soft: "Milianor-desert-soft.json",
+    vibrant: "Milianor-desert-vibrant.json",
+  });
+
+  darkAqua.generateTheme({
+    default: "Milianor-aqua.json",
+    soft: "Milianor-aqua-soft.json",
+    vibrant: "Milianor-aqua-vibrant.json",
+  });
+
   res.redirect("/");
 });
 

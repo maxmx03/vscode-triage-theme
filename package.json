@@ -1,9 +1,10 @@
 {
   "name": "milianor-theme",
   "displayName": "Milianor Theme",
-  "description": "milianor dev theme",
+  "description": "milianor theme for web developers",
   "publisher": "MaxMilianoDelCantoQuezada",
-  "version": "1.0.5",
+  "icon": "images/image.jpeg",
+  "version": "1.0.9",
   "engines": {
     "vscode": "^1.55.0"
   },
@@ -17,19 +18,34 @@
   "contributes": {
     "themes": [
       {
-        "label": "Milianor Theme",
+        "label": "Milianor Dark Desert",
         "uiTheme": "vs-dark",
-        "path": "./themes/Milianor-theme.json"
+        "path": "./themes/Milianor-desert.json"
       },
       {
-        "label": "Milianor Theme Soft",
+        "label": "Milianor Dark Desert Soft",
         "uiTheme": "vs-dark",
-        "path": "./themes/Milianor-theme-soft.json"
+        "path": "./themes/Milianor-desert-soft.json"
       },
       {
-        "label": "Milianor Theme Vibrant",
+        "label": "Milianor Dark Desert Vibrant",
         "uiTheme": "vs-dark",
-        "path": "./themes/Milianor-theme-vibrant.json"
+        "path": "./themes/Milianor-desert-vibrant.json"
+      },
+      {
+        "label": "Milianor Dark Aqua",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Milianor-aqua.json"
+      },
+      {
+        "label": "Milianor Dark Aqua Soft",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Milianor-aqua-soft.json"
+      },
+      {
+        "label": "Milianor Dark Aqua Vibrant",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Milianor-aqua-vibrant.json"
       }
     ]
   },

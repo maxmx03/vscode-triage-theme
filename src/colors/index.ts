@@ -1,2 +1,4 @@
-export * from "./codeColors";
-export * from "./ideColors";
+export * from "./darkDesert/desertColorsCode";
+export * from "./darkDesert/desertColorsIde";
+
+export * from "./darkAqua/aquaCodeColors";

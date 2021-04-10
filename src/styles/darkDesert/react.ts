@@ -1,7 +1,7 @@
-import { codeColors } from "../colors";
-import { TColors } from "../utils/types";
+import { desertCodeColors } from "../../colors";
+import { TColors } from "../../utils/types";
 
-const { react: rct } = codeColors;
+const { react: rct } = desertCodeColors;
 
 export const react: Array<TColors> = [
   {

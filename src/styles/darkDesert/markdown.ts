@@ -1,7 +1,7 @@
-import { codeColors } from "../colors";
-import { TColors } from "../utils/types";
+import { desertCodeColors } from "../../colors";
+import { TColors } from "../../utils/types";
 
-const { markdown: mk } = codeColors;
+const { markdown: mk } = desertCodeColors;
 
 export const markdown: Array<TColors> = [
   {

@@ -1,7 +1,7 @@
-import { codeColors } from "../colors";
-import { TColors } from "../utils/types";
+import { desertCodeColors } from "../../colors";
+import { TColors } from "../../utils/types";
 
-const { vue: v } = codeColors;
+const { vue: v } = desertCodeColors;
 
 export const vue: Array<TColors> = [
   {

@@ -1,7 +1,7 @@
-import { codeColors } from "../colors";
-import { TColors } from "../utils/types";
+import { desertCodeColors } from "../../colors";
+import { TColors } from "../../utils/types";
 
-const { json: jsn } = codeColors;
+const { json: jsn } = desertCodeColors;
 
 export const json: Array<TColors> = [
   {

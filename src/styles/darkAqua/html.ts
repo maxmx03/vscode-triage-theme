@@ -1,7 +1,7 @@
-import { codeColors } from "../colors";
-import { TColors } from "../utils/types";
+import { aquaCodeColors } from "../../colors";
+import { TColors } from "../../utils/types";
 
-const { html: ht } = codeColors;
+const { html: ht } = aquaCodeColors;
 
 export const html: Array<TColors> = [
   {
