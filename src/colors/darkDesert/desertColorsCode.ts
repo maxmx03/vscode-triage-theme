@@ -55,7 +55,6 @@ export const desertCodeColors = {
   html: {
     meta: desertColors.darkerPink,
     tag: desertColors.orange,
-    vueTag: desertColors.green,
     attribute: desertColors.purple,
     text: desertColors.white,
     constant: desertColors.yellow,

@@ -1,10 +1,9 @@
 export const aquaColors = {
   background: "#2d334a",
   foreground: "#f6efeb",
-  aeroBlue: "#c2fcd9",
   chartreuse: "#94fc13",
   electricLime: "#d2e603",
-  java: "#11d3bc",
+  aeroBlue: "#c2fcd9",
   turquoise: "#1bf5af",
   aquaMarine: "#74f9ff",
   ice: "#b2ebf2",
@@ -18,14 +17,11 @@ export const aquaColors = {
   orange: "#ff8b00",
   mauve: "#f5b5fc",
   tickleMePink: "#ff75a0",
+  fuchsiaBlue: "#845EC2",
   melrose: "#a5aeff",
-  silver: "#bbbbbb",
+  oysterPink: "#EAD3CB",
   dawnPink: "#f6efeb",
 };
 
-export const aquaSpecial = {
-  vue: "#42b983",
-  php: "#a06ee1",
-};
 
 // colors names by: https://imagecolorpicker.com/color-code/94fc13
