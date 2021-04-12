@@ -1,5 +1,5 @@
 export const aquaColors = {
-  background: "#2d334a",
+  background: "#2b2e4a",
   foreground: "#f6efeb",
   chartreuse: "#94fc13",
   electricLime: "#d2e603",
@@ -21,6 +21,7 @@ export const aquaColors = {
   melrose: "#a5aeff",
   oysterPink: "#EAD3CB",
   dawnPink: "#f6efeb",
+  black: "#000"
 };
 
 

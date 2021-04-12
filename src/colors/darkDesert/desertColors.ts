@@ -8,7 +8,7 @@ export const desertColors = {
   blue: "#1eafed",
   yellow: "#fffb97",
   gold: "#fdb827",
-  red: "#d35d6e",
+  red: "#f05454",
   orange: "#f79071",
   pink: "#f5b5fc",
   darkerPink: "#ff62a5",
