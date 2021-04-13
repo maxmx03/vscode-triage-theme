@@ -26,6 +26,10 @@ export default class VsCodeTheme implements ITheme {
   }
 
   writeJsonFile(theme: string, location: string) {
+    fs.unlink(location, (err) => {
+      if (err) throw err;
+    });
+    
     fs.writeFile(location, theme, "utf8", (err: any) => {
       if (err) throw err;
     });
