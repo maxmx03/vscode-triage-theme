@@ -1,5 +1,4 @@
 import VsCodeTheme from "../utils/classes/VsCodeTheme";
-import { desertIdeColors } from "../colors";
 import {
   languages,
   react,
@@ -10,7 +9,8 @@ import {
   scss,
   gitGnoreAtr,
   markdown,
-} from "../styles/darkDesert";
+} from "../styles";
+import { desertIdeColors, desertCodeColors } from "../colors";
 
 export const darkDesert = new VsCodeTheme();
 
@@ -28,13 +28,13 @@ darkDesert.colors = {
 };
 
 darkDesert.tokenColors = [
-  ...languages,
-  ...react,
-  ...vue,
-  ...json,
-  ...xml,
-  ...html,
-  ...scss,
-  ...gitGnoreAtr,
-  ...markdown,
+  ...languages(desertCodeColors),
+  ...react(desertCodeColors),
+  ...vue(desertCodeColors),
+  ...json(desertCodeColors),
+  ...xml(desertCodeColors),
+  ...html(desertCodeColors),
+  ...scss(desertCodeColors),
+  ...gitGnoreAtr(desertCodeColors),
+  ...markdown(desertCodeColors),
 ];

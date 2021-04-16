@@ -9,8 +9,8 @@ import {
   scss,
   gitGnoreAtr,
   markdown,
-} from "../styles/darkAqua";
-import { aquaIdeColors } from "../colors";
+} from "../styles";
+import { aquaIdeColors, aquaCodeColors } from "../colors";
 
 export const darkAqua = new VsCodeTheme();
 
@@ -22,13 +22,13 @@ darkAqua.colors = {
 };
 
 darkAqua.tokenColors = [
-  ...languages,
-  ...react,
-  ...vue,
-  ...json,
-  ...xml,
-  ...html,
-  ...scss,
-  ...gitGnoreAtr,
-  ...markdown,
+  ...languages(aquaCodeColors),
+  ...react(aquaCodeColors),
+  ...vue(aquaCodeColors),
+  ...json(aquaCodeColors),
+  ...xml(aquaCodeColors),
+  ...html(aquaCodeColors),
+  ...scss(aquaCodeColors),
+  ...gitGnoreAtr(aquaCodeColors),
+  ...markdown(aquaCodeColors),
 ];

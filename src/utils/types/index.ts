@@ -1,2 +1,2 @@
 export * from "./tokenColors";
-export * from "./colors";
+export * from "./codeColors";
