@@ -5,7 +5,7 @@ export const aquaCodeColors: CodeColors = {
   languages: {
     comment: colors.oysterPink,
     string: colors.yellow,
-    constant: colors.fuchsiaBlue,
+    constant: colors.cornflowerBlue,
     variables: colors.lilyWhite,
     phpVariables: colors.fuchsiaBlue,
     keyword: colors.mauve,
