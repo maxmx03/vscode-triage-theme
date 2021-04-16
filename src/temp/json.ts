@@ -1,4 +1,4 @@
-import { TColors } from "../../utils/types";
+import { TColors } from "../utils/types";
 
 export const json = ({ json: jsn }): Array<TColors> => {
   return [

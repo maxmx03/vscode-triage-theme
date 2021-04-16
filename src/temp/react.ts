@@ -1,4 +1,4 @@
-import { TColors } from "../../utils/types";
+import { TColors } from "../utils/types";
 
 export const react = ({ react: rct }): Array<TColors> => {
   return [

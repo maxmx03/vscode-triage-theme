@@ -1,4 +1,4 @@
-import { TColors } from "../../utils/types";
+import { TColors } from "../utils/types";
 
 export const vue = ({ vue: v }): Array<TColors> => {
   return [

@@ -1,6 +1,6 @@
-import { TColors, CodeColors } from "../../utils/types";
+import { TColors } from "../utils/types";
 
-export const markdown = ({ markdown: mk }: CodeColors): Array<TColors> => {
+export const markdown = ({ markdown: mk }): Array<TColors> => {
   return [
     {
       name: "Emphasis",

@@ -1,4 +1,4 @@
-import { TColors } from "../../utils/types";
+import { TColors } from "../utils/types";
 
 export function xml({ xml: xm }): Array<TColors> {
   return [

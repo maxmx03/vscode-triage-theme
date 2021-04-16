@@ -1,38 +1,7 @@
-import { TColors, CodeColors } from "../../utils/types";
+import { TColors } from "../utils/types";
 
-export const scss = ({ scss: sc }: CodeColors): Array<TColors> => {
+export const scss = ({ scss: sc }): Array<TColors> => {
   return [
-    {
-      name: "CSS attribute parent selectors ('&')",
-      scope: ["entity.other.attribute-name.parent-selector"],
-      settings: {
-        foreground: sc.parentSelector,
-      },
-    },
-    {
-      name: "Generic selectors (CSS/SCSS/Less/Stylus)",
-      scope: ["meta.selector"],
-      settings: {
-        foreground: sc.generics,
-      },
-    },
-    {
-      name: "SCSS attibute selector strings",
-      scope: ["meta.attribute-selector.scss"],
-      settings: {
-        foreground: sc.string,
-      },
-    },
-    {
-      name: "SCSS attribute selector brackets",
-      scope: [
-        "punctuation.definition.attribute-selector.end.bracket.square.scss",
-        "punctuation.definition.attribute-selector.begin.bracket.square.scss",
-      ],
-      settings: {
-        foreground: sc.bracket,
-      },
-    },
     {
       name: "SCSS Keywords, Interpolation",
       scope: [

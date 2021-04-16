@@ -1,6 +1,6 @@
-import { TColors } from "../utils/types";
+import { TColors, CodeColors } from "../utils/types";
 
-export const html = ({ html: ht }): Array<TColors> => {
+export const html = ({ html: ht }: CodeColors): Array<TColors> => {
   return [
     {
       name: "HTML Meta",
@@ -36,6 +36,13 @@ export const html = ({ html: ht }): Array<TColors> => {
       scope: ["text.html.jinja"],
       settings: {
         foreground: ht.text,
+      },
+    },
+    {
+      name: "HTML Comments",
+      scope: ["comment.block.html"],
+      settings: {
+        foreground: ht.comment,
       },
     },
     {

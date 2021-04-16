@@ -25,7 +25,6 @@ export type CodeColors = {
     buildIn: string;
     destructuringLhs: string;
     destructuringRhs: string;
-    regex: string;
     regexString: string;
     regexConstants: string;
     regexNonCapture: string;
@@ -43,6 +42,7 @@ export type CodeColors = {
     keys: string;
     dates: string;
     aliases: string;
+    foreground: string;
     shellVariables: string;
     shellConstant: string;
     makeFile: string;
@@ -52,6 +52,7 @@ export type CodeColors = {
   };
   react: {
     classComponent: string;
+    source: string;
   };
   vue: {
     default: string;
@@ -81,6 +82,7 @@ export type CodeColors = {
     text: string;
     constant: string;
     string: string;
+    comment: string;
     other?: string;
     test?: string;
   };
@@ -99,8 +101,8 @@ export type CodeColors = {
     propertyValue: string;
     parentSelector: string;
     unit: string;
-    variable: string;
-    variable2: string;
+    cssVar: string;
+    scssVar: string;
     comment: string;
     string: string;
     bracket: string;

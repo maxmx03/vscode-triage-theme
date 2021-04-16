@@ -190,7 +190,7 @@ export const aquaIdeColors = {
   "gitDecoration.modifiedResourceForeground": colors.aquaMarine,
   "gitDecoration.stageDeletedResourceForeground": colors.mauve,
   "gitDecoration.stageModifiedResourceForeground": "#e2c08d",
-  "gitDecoration.submoduleResourceForeground": colors.ice,
+  "gitDecoration.submoduleResourceForeground": colors.aquaMarine,
   "gitDecoration.untrackedResourceForeground": colors.turquoise,
   "editorMarkerNavigation.background": "#2d334a",
   "editorMarkerNavigationError.background": colors.mauve,

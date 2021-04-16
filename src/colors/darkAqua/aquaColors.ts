@@ -6,9 +6,7 @@ export const aquaColors = {
   aeroBlue: "#c2fcd9",
   turquoise: "#1bf5af",
   aquaMarine: "#74f9ff",
-  ice: "#b2ebf2",
   lilyWhite: "#E3F8FF",
-  robinsEggBlue: "#00bcd4",
   cornflowerBlue: "#7c6fff",
   yellow: "#fff76a",
   sunglow: "#ffc93c",
@@ -21,8 +19,7 @@ export const aquaColors = {
   melrose: "#a5aeff",
   oysterPink: "#EAD3CB",
   dawnPink: "#f6efeb",
-  black: "#000"
+  black: "#000",
 };
-
 
 // colors names by: https://imagecolorpicker.com/color-code/94fc13

@@ -25,20 +25,6 @@ export default class VsCodeTheme implements ITheme {
     this.tokenColors = tokenColors ?? [];
   }
 
-  writeJsonFile(theme: string, location: string) {
-    fs.unlink(location, (err) => {
-      if (err) throw err;
-    });
-    
-    fs.writeFile(location, theme, "utf8", (err: any) => {
-      if (err) throw err;
-    });
-  }
-
-  saveFile(folderName: string, fileName: string): string {
-    return path.resolve(folderName, fileName);
-  }
-
   makeThemeVibrant(theme: VsCodeTheme) {
     return JSON.stringify({
       ...theme,
@@ -84,6 +70,28 @@ export default class VsCodeTheme implements ITheme {
         };
       }),
     });
+  }
+
+  writeJsonFile(theme: string, location: string) {
+    new Promise((resolve, reject) => {
+      fs.unlink(location, (err) => {
+        if (err) reject(err);
+
+        resolve("success");
+      });
+    })
+      .then(() => {
+        fs.writeFile(location, theme, "utf8", (err: any) => {
+          if (err) throw err;
+        });
+      })
+      .catch((err) => {
+        throw err;
+      });
+  }
+
+  saveFile(folderName: string, fileName: string): string {
+    return path.resolve(folderName, fileName);
   }
 
   generateTheme(opts: { default: string; soft: string; vibrant: string }) {
