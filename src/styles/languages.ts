@@ -212,7 +212,9 @@ export const languages = ({ languages: ls }: CodeColors): Array<TColors> => {
     {
       name: "Methods",
       scope: [
-        "entity.name.function",
+        "entity.name.function.member",
+        "meta.function-call",
+        "meta.tag.attributes",
         "meta.function-call.generic",
         "meta.function-call.object",
         "meta.function-call.php",
@@ -372,26 +374,11 @@ export const languages = ({ languages: ls }: CodeColors): Array<TColors> => {
     },
     {
       name: "Strings",
-      scope: ["string"],
-      settings: {
-        foreground: ls.string,
-      },
-    },
-    {
-      name: "String quotes (temporary vscode fix)",
       scope: [
-        "punctuation.definition.string.begin",
-        "punctuation.definition.string.end",
-      ],
-      settings: {
-        foreground: ls.string,
-      },
-    },
-    {
-      name: "Property quotes (temporary vscode fix)",
-      scope: [
-        "punctuation.support.type.property-name.begin",
-        "punctuation.support.type.property-name.end",
+        "string.quoted.double",
+        "string.quoted.single",
+        "string.template",
+        "punctuation.definition.string",
       ],
       settings: {
         foreground: ls.string,
@@ -412,7 +399,6 @@ export const languages = ({ languages: ls }: CodeColors): Array<TColors> => {
     {
       name: "Variables and object properties",
       scope: [
-        "variable",
         "constant.other.key.perl",
         "support.variable.property",
         "variable.other.constant.js",
