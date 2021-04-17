@@ -75,7 +75,7 @@ export const desertCodeColors: CodeColors = {
   },
   html: {
     meta: colors.darkerPink,
-    attribute: colors.darkerPink,
+    attribute: colors.purple,
     string: colors.green,
     constant: colors.purple,
     tag: colors.orange,
