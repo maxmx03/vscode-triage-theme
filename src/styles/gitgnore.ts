@@ -1,6 +1,6 @@
-import { TColors } from "../utils/types";
+import { TColors, CodeColors } from "../utils/types";
 
-export const gitGnoreAtr = ({ gitGnoreAtr: git }): Array<TColors> => {
+export const gitGnoreAtr = ({ gitGnoreAtr: git }: CodeColors): Array<TColors> => {
   return [
     {
       name: "Gitgnore",

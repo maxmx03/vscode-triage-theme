@@ -11,7 +11,7 @@ export const react = ({ react: rct }: CodeColors): Array<TColors> => {
     },
     {
       name: "React Source",
-      scope: ["meta.tag"],
+      scope: ["meta.tag", "punctuation.terminator.statement.js"],
       settings: {
         foreground: rct.source,
       },

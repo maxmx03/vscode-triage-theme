@@ -4,6 +4,7 @@ export interface ITheme {
   name: string;
   type: string;
   semanticHighlighting: boolean;
+  semanticTokenColors?: object;
   colors: object;
   tokenColors: Array<TColors>;
   writeJsonFile(theme: string, location: string): void;

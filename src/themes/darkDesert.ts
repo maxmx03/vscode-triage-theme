@@ -9,7 +9,7 @@ import {
   scss,
   gitGnoreAtr,
   markdown,
-} from "../temp";
+} from "../styles";
 import { desertIdeColors, desertCodeColors } from "../colors";
 
 export const darkDesert = new VsCodeTheme();

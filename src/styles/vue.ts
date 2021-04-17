@@ -1,6 +1,6 @@
-import { TColors } from "../utils/types";
+import { TColors, CodeColors } from "../utils/types";
 
-export const vue = ({ vue: v }): Array<TColors> => {
+export const vue = ({ vue: v }: CodeColors): Array<TColors> => {
   return [
     {
       name: "Vue HTML Tag",

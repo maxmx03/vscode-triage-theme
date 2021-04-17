@@ -1,4 +1,4 @@
-import { desertColors, desertSpecial } from "./desertColors";
+import { desertColors, desertSpecial } from "./darkColors";
 
 export const desertCodeColors = {
   languages: {

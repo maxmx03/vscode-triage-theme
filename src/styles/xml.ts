@@ -1,6 +1,6 @@
-import { TColors } from "../utils/types";
+import { TColors, CodeColors } from "../utils/types";
 
-export function xml({ xml: xm }): Array<TColors> {
+export function xml({ xml: xm }: CodeColors): Array<TColors> {
   return [
     {
       name: "XML Meta",

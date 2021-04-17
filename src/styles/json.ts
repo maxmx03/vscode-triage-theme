@@ -1,6 +1,6 @@
-import { TColors } from "../utils/types";
+import { TColors, CodeColors } from "../utils/types";
 
-export const json = ({ json: jsn }): Array<TColors> => {
+export const json = ({ json: jsn }: CodeColors): Array<TColors> => {
   return [
     {
       name: "JSON Comments",

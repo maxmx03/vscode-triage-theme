@@ -1,6 +1,6 @@
-import { TColors } from "../utils/types";
+import { TColors, CodeColors } from "../utils/types";
 
-export const scss = ({ scss: sc }): Array<TColors> => {
+export const scss = ({ scss: sc }: CodeColors): Array<TColors> => {
   return [
     {
       name: "SCSS Keywords, Interpolation",
@@ -111,14 +111,14 @@ export const scss = ({ scss: sc }): Array<TColors> => {
       name: "CSS Variable",
       scope: ["variable.css", "variable.argument.css"],
       settings: {
-        foreground: sc.variable2,
+        foreground: sc.cssVar,
       },
     },
     {
       name: "SCSS Variable",
       scope: ["variable.scss"],
       settings: {
-        foreground: sc.variable,
+        foreground: sc.scssVar,
       },
     },
     {

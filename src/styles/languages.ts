@@ -213,11 +213,9 @@ export const languages = ({ languages: ls }: CodeColors): Array<TColors> => {
       name: "Methods",
       scope: [
         "entity.name.function.member",
-        "meta.function-call",
         "meta.tag.attributes",
         "meta.function-call.generic",
         "meta.function-call.object",
-        "meta.function-call.php",
         "meta.function-call.static",
         "meta.method-call.java meta.method",
         "meta.method.groovy",
@@ -242,6 +240,7 @@ export const languages = ({ languages: ls }: CodeColors): Array<TColors> => {
         "meta.at-rule.function variable",
         "meta.at-rule.mixin variable",
         "meta.function.arguments variable.other.php",
+        "meta.function.parameter.no-default.php",
         "meta.selectionset.graphql meta.arguments.graphql variable.arguments.graphql",
         "variable.parameter",
       ],
@@ -407,6 +406,15 @@ export const languages = ({ languages: ls }: CodeColors): Array<TColors> => {
       ],
       settings: {
         foreground: ls.variables,
+      },
+    },
+    {
+      name: "PHP Variables",
+      scope: [
+        "variable.other.php"
+      ],
+      settings: {
+        foreground: ls.phpVariables,
       },
     },
     {
