@@ -4,7 +4,7 @@
   "description": "milianor theme for web developers",
   "publisher": "MaxMilianoDelCantoQuezada",
   "icon": "images/image.jpeg",
-  "version": "2.1.9",
+  "version": "3.0.0",
   "engines": {
     "vscode": "^1.55.0"
   },

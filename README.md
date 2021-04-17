@@ -1,7 +1,6 @@
 # Milianor Theme
 
 - My theme for web development.
-- working in progress...
 
 # Dark Desert
 
@@ -10,3 +9,8 @@
 # Dark Aqua
 
 ![Screenshot](https://raw.githubusercontent.com/maxmx03/milianor-theme/master/images/darkaquapng.png)
+
+This theme is maintained by Max Miliano ヾ(•ω•`)o
+
+# repository
+https://github.com/maxmx03/milianor-theme

@@ -10,6 +10,13 @@ export const vue = ({ vue: v }: CodeColors): Array<TColors> => {
       },
     },
     {
+      name: "Vue Attributes",
+      scope: ["source.vue entity.other.attribute-name.html"],
+      settings: {
+        foreground: v.attribute,
+      },
+    },
+    {
       name: "Vue Default Color Expressions, Directive",
       scope: ["expression.embedded.vue", "source.directive.vue"],
       settings: {

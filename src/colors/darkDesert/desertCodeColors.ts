@@ -60,6 +60,7 @@ export const desertCodeColors: CodeColors = {
   },
   vue: {
     default: special.vue,
+    attribute: colors.purple,
     types: colors.cyan,
   },
   json: {

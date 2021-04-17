@@ -15,6 +15,8 @@ export const aquaColors = {
   mauve: "#f5b5fc",
   tickleMePink: "#ff75a0",
   dullLavender: "#A49AE7",
+  cornflowerBlue: "#7C6FFF",
+  perfume: "#BD93F9",
   fuchsiaBlue: "#845EC2",
   eastSide: "#ae89c3",
   oysterPink: "#EAD3CB",

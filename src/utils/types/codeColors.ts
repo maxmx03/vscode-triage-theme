@@ -56,6 +56,7 @@ export type CodeColors = {
   };
   vue: {
     default: string;
+    attribute: string;
     types: string;
     other?: string;
     test?: string;
