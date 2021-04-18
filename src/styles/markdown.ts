@@ -3,41 +3,6 @@ import { TColors, CodeColors } from "../utils/types";
 export const markdown = ({ markdown: mk }: CodeColors): Array<TColors> => {
   return [
     {
-      name: "Emphasis",
-      scope: ["emphasis"],
-      settings: {
-        fontStyle: "italic",
-      },
-    },
-    {
-      name: "Strong",
-      scope: ["strong"],
-      settings: {
-        fontStyle: "bold",
-      },
-    },
-    {
-      name: "Header",
-      scope: ["header"],
-      settings: {
-        foreground: mk.header,
-      },
-    },
-    {
-      name: "Source",
-      scope: ["source"],
-      settings: {
-        foreground: mk.source,
-      },
-    },
-    {
-      name: "Meta Diff",
-      scope: ["meta.diff", "meta.diff.header"],
-      settings: {
-        foreground: mk.diff,
-      },
-    },
-    {
       name: "Markup Inserted",
       scope: ["markup.inserted"],
       settings: {

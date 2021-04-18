@@ -53,6 +53,9 @@ export const desertCodeColors: CodeColors = {
     jsDocKeyWord: colors.pink,
     jsDockTypes: colors.cyan,
     jsDockComment: colors.grey,
+    diff: colors.cyan,
+    header: colors.gold,
+    source: colors.white,
   },
   react: {
     classComponent: colors.blue,
@@ -120,10 +123,8 @@ export const desertCodeColors: CodeColors = {
     constants: colors.orange,
     deleted: colors.red,
     deprecated: colors.grey,
-    diff: colors.cyan,
     error: colors.red,
     filename: colors.green,
-    header: colors.gold,
     horizontal: colors.blue,
     inline: colors.blue,
     inserted: colors.blue,
@@ -132,6 +133,5 @@ export const desertCodeColors: CodeColors = {
     linkText: colors.blue,
     links: colors.blue,
     list: colors.turquoise,
-    source: colors.white,
   },
 };

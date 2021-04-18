@@ -47,6 +47,9 @@ export type CodeColors = {
     shellConstant: string;
     makeFile: string;
     Haskell: string;
+    header: string;
+    source: string;
+    diff: string;
     test?: string;
     other?: string;
   };
@@ -118,9 +121,6 @@ export type CodeColors = {
     test?: string;
   };
   markdown: {
-    header: string;
-    source: string;
-    diff: string;
     inserted: string;
     deleted: string;
     changed: string;

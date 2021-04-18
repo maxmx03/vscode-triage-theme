@@ -3,6 +3,41 @@ import { TColors, CodeColors } from "../utils/types";
 export const languages = ({ languages: ls }: CodeColors): Array<TColors> => {
   return [
     {
+      name: "Emphasis",
+      scope: ["emphasis"],
+      settings: {
+        fontStyle: "italic",
+      },
+    },
+    {
+      name: "Strong",
+      scope: ["strong"],
+      settings: {
+        fontStyle: "bold",
+      },
+    },
+    {
+      name: "Header",
+      scope: ["header"],
+      settings: {
+        foreground: ls.header,
+      },
+    },
+    {
+      name: "Source",
+      scope: ["source"],
+      settings: {
+        foreground: ls.source,
+      },
+    },
+    {
+      name: "Meta Diff",
+      scope: ["meta.diff", "meta.diff.header"],
+      settings: {
+        foreground: ls.diff,
+      },
+    },
+    {
       name: "RegExp string",
       scope: [
         "string.regexp",
@@ -372,6 +407,13 @@ export const languages = ({ languages: ls }: CodeColors): Array<TColors> => {
       },
     },
     {
+      name: "Comment",
+      scope: "comment",
+      settings: {
+        foreground: ls.comment,
+      },
+    },
+    {
       name: "Strings",
       scope: [
         "string.quoted.double",
@@ -410,9 +452,7 @@ export const languages = ({ languages: ls }: CodeColors): Array<TColors> => {
     },
     {
       name: "PHP Variables",
-      scope: [
-        "variable.other.php"
-      ],
+      scope: ["variable.other.php"],
       settings: {
         foreground: ls.phpVariables,
       },
@@ -522,3 +562,5 @@ export const languages = ({ languages: ls }: CodeColors): Array<TColors> => {
     },
   ];
 };
+
+// meu comentário

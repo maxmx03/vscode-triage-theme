@@ -50,6 +50,9 @@ export const aquaCodeColors: CodeColors = {
     jsDocKeyWord: colors.mauve,
     jsDockTypes: colors.aquaMarine,
     jsDockComment: colors.oysterPink,
+    diff: colors.fuchsiaBlue,
+    header: colors.sunglow,
+    source: colors.dawnPink,
   },
   react: {
     classComponent: colors.aquaMarine,
@@ -117,10 +120,8 @@ export const aquaCodeColors: CodeColors = {
     constants: colors.aeroBlue,
     deleted: colors.geraldine,
     deprecated: colors.lightRed,
-    diff: colors.fuchsiaBlue,
     error: colors.geraldine,
     filename: colors.yellow,
-    header: colors.sunglow,
     horizontal: colors.turquoise,
     inline: colors.turquoise,
     inserted: colors.turquoise,
@@ -129,6 +130,5 @@ export const aquaCodeColors: CodeColors = {
     linkText: colors.aquaMarine,
     links: colors.aquaMarine,
     list: colors.electricLime,
-    source: colors.dawnPink,
   },
 };
