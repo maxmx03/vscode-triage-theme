@@ -562,5 +562,3 @@ export const languages = ({ languages: ls }: CodeColors): Array<TColors> => {
     },
   ];
 };
-
-// meu comentário
