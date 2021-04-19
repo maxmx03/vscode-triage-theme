@@ -439,7 +439,7 @@ export const languages = ({ languages: ls }: CodeColors): Array<TColors> => {
     },
     {
       name: "Variables",
-      scope: ["variable"],
+      scope: ["variable.other.property"],
       settings: {
         foreground: ls.variables,
       },
