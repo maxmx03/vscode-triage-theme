@@ -147,7 +147,7 @@ export const scss = ({ scss: sc }: CodeColors): Array<TColors> => {
     },
     {
       name: "SCSS Functions",
-      scope: ["meta.function", "support.function"],
+      scope: ["support.function"],
       settings: {
         foreground: sc.function,
       },

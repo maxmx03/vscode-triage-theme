@@ -79,15 +79,11 @@ export default class VsCodeTheme implements ITheme {
 
         resolve("success");
       });
-    })
-      .then(() => {
-        fs.writeFile(location, theme, "utf8", (err: any) => {
-          if (err) throw err;
-        });
-      })
-      .catch((err) => {
-        throw err;
+    }).finally(() => {
+      fs.writeFile(location, theme, "utf8", (err: any) => {
+        if (err) throw err;
       });
+    });
   }
 
   saveFile(folderName: string, fileName: string): string {

@@ -28,7 +28,6 @@ darkDesert.colors = {
 };
 
 darkDesert.tokenColors = [
-  ...languages(desertCodeColors),
   ...react(desertCodeColors),
   ...vue(desertCodeColors),
   ...json(desertCodeColors),
@@ -37,4 +36,5 @@ darkDesert.tokenColors = [
   ...scss(desertCodeColors),
   ...gitGnoreAtr(desertCodeColors),
   ...markdown(desertCodeColors),
+  ...languages(desertCodeColors),
 ];

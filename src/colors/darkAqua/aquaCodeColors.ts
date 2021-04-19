@@ -100,7 +100,7 @@ export const aquaCodeColors: CodeColors = {
     propertyValue: colors.lightRed,
     custom: colors.fuchsiaBlue,
     id: colors.sunglow,
-    pseudo: colors.aeroBlue,
+    pseudo: colors.cornflowerBlue,
     tag: colors.lightRed,
     type: colors.tickleMePink,
     unit: colors.electricLime,

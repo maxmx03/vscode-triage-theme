@@ -18,7 +18,6 @@ export const aquaColors = {
   cornflowerBlue: "#7C6FFF",
   perfume: "#BD93F9",
   fuchsiaBlue: "#845EC2",
-  eastSide: "#ae89c3",
   oysterPink: "#EAD3CB",
   dawnPink: "#f6efeb",
   black: "#000",

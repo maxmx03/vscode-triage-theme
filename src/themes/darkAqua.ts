@@ -22,7 +22,6 @@ darkAqua.colors = {
 };
 
 darkAqua.tokenColors = [
-  ...languages(aquaCodeColors),
   ...react(aquaCodeColors),
   ...vue(aquaCodeColors),
   ...json(aquaCodeColors),
@@ -31,4 +30,5 @@ darkAqua.tokenColors = [
   ...scss(aquaCodeColors),
   ...gitGnoreAtr(aquaCodeColors),
   ...markdown(aquaCodeColors),
+  ...languages(aquaCodeColors),
 ];
