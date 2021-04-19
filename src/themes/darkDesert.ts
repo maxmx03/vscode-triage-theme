@@ -18,13 +18,7 @@ darkDesert.name = "Milianor Theme";
 darkDesert.type = "dark";
 darkDesert.semanticHighlighting = true;
 darkDesert.colors = {
-  "editor.background": desertIdeColors.editorBackground,
-  "editor.foreground": desertIdeColors.editorForeground,
-  "activityBarBadge.background": desertIdeColors.activityBarBadgeBackground,
-  "sideBarTitle.foreground": desertIdeColors.sideBarTitleForeground,
-  "activityBar.activeBorder": desertIdeColors.activityBarActiveBorder,
-  "activityBar.foreground": desertIdeColors.activityBarForeground,
-  "statusBar.background": desertIdeColors.statusBarBackground,
+  ...desertIdeColors,
 };
 
 darkDesert.tokenColors = [

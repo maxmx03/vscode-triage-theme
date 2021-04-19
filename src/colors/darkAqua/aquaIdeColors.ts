@@ -43,7 +43,7 @@ export const aquaIdeColors = {
   "statusBar.debuggingForeground": "#ffffff",
   "statusBar.noFolderBackground": colors.mauve,
   "statusBar.noFolderForeground": "#ffffff",
-  "statusBarItem.remoteBackground": colors.mauve,
+  "statusBarItem.remoteBackground": colors.tickleMePink,
   "statusBarItem.remoteForeground": "#ffffff",
   "titleBar.activeBackground": "#161923",
   "titleBar.activeForeground": "#f6efeb",
