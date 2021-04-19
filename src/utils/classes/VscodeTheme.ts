@@ -1,6 +1,7 @@
 import path from "path";
 import fs from "fs";
 import tinycolor from "tinycolor2";
+
 import { ITheme } from "../interfaces";
 import { TColors } from "../types";
 
@@ -25,6 +26,10 @@ export default class VsCodeTheme implements ITheme {
     this.tokenColors = tokenColors ?? [];
   }
 
+  hasForeground(object: TColors): boolean | undefined {
+    return object.settings.foreground?.includes("#");
+  }
+
   makeThemeVibrant(theme: VsCodeTheme) {
     return JSON.stringify({
       ...theme,
@@ -39,9 +44,11 @@ export default class VsCodeTheme implements ITheme {
           ...object,
           settings: {
             ...object.settings,
-            foreground: tinycolor(object.settings.foreground)
-              .saturate()
-              .toHexString(),
+            [this.hasForeground(object)
+              ? "foreground"
+              : ""]: this.hasForeground(object)
+              ? tinycolor(object.settings.foreground).saturate().toHexString()
+              : "",
           },
         };
       }),
@@ -63,9 +70,13 @@ export default class VsCodeTheme implements ITheme {
           ...object,
           settings: {
             ...object.settings,
-            foreground: tinycolor(object.settings.foreground)
-              .desaturate(20)
-              .toHexString(),
+            [this.hasForeground(object)
+              ? "foreground"
+              : ""]: this.hasForeground(object)
+              ? tinycolor(object.settings.foreground)
+                  .desaturate(20)
+                  .toHexString()
+              : "",
           },
         };
       }),

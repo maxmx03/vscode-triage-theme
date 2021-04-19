@@ -1,3 +1,5 @@
+import tinycolor from "tinycolor2";
+
 import { desertColors } from "./desertColors";
 
 export const desertIdeColors = {
@@ -11,6 +13,8 @@ export const desertIdeColors = {
   "button.background": desertColors.orange,
   "button.foreground": desertColors.foreground,
   "button.hoverBackground": desertColors.red,
-  "list.activeSelectionBackground": desertColors.background,
-  "list.activeSelectionForeground": desertColors.red,
+  "list.activeSelectionBackground": tinycolor(desertColors.red)
+    .darken(50)
+    .toHexString(),
+  "list.activeSelectionForeground": desertColors.white,
 };
