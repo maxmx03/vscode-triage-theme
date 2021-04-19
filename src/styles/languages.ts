@@ -239,7 +239,10 @@ export const languages = ({ languages: ls }: CodeColors): Array<TColors> => {
     },
     {
       name: "Class Attributes",
-      scope: ["variable.object.property", "meta.object-literal.key"],
+      scope: [
+        "variable.object.property",
+        "meta.object-literal.key"
+      ],
       settings: {
         foreground: ls.attributes,
       },
@@ -439,7 +442,7 @@ export const languages = ({ languages: ls }: CodeColors): Array<TColors> => {
     },
     {
       name: "Variables",
-      scope: ["variable.other.property"],
+      scope: ["meta.definition.variable"],
       settings: {
         foreground: ls.variables,
       },
