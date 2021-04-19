@@ -4,7 +4,7 @@
   "description": "milianor theme for web developers",
   "publisher": "MaxMilianoDelCantoQuezada",
   "icon": "images/image.jpeg",
-  "version": "3.0.2",
+  "version": "3.0.3",
   "engines": {
     "vscode": "^1.55.0"
   },
@@ -51,7 +51,8 @@
   },
   "scripts": {
     "dev": "nodemon dist/app.js && clear",
-    "watch": "rm -rf dist && tsc --watch"
+    "watch": "rm -rf dist && tsc --watch",
+    "publish": "yarn vsce package && yarn vsce publish"
   },
   "devDependencies": {
     "@types/express": "^4.17.11",
