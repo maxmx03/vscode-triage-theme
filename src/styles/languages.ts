@@ -438,6 +438,13 @@ export const languages = ({ languages: ls }: CodeColors): Array<TColors> => {
       },
     },
     {
+      name: "Variables",
+      scope: ["variable"],
+      settings: {
+        foreground: ls.variables,
+      },
+    },
+    {
       name: "Variables and object properties",
       scope: [
         "constant.other.key.perl",
