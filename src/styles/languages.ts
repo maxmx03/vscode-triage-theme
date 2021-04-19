@@ -442,7 +442,10 @@ export const languages = ({ languages: ls }: CodeColors): Array<TColors> => {
     },
     {
       name: "Variables",
-      scope: ["meta.definition.variable"],
+      scope: [
+        "meta.definition.variable",
+        "meta.function variable.other.readwrite"
+    ],
       settings: {
         foreground: ls.variables,
       },
