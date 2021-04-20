@@ -5,7 +5,7 @@ import { Colors } from "../../utils/types";
 const darkenOldGold = tinycolor(goldColors.oldGold).darken(45).toHexString();
 
 export const goldIdeColors: Colors = {
-  "editor.background": goldColors.background,
+  "editor.background": darkenOldGold,
   "editor.foreground": goldColors.foreground,
   "activityBarBadge.background": goldColors.tanzanite,
   "sideBarTitle.foreground": goldColors.marble,
@@ -21,6 +21,7 @@ export const goldIdeColors: Colors = {
   "activityBar.background": goldColors.background,
   "activityBar.border": goldColors.oldGold,
   "sideBar.background": darkenOldGold,
+  "sideBar.border": goldColors.oldGold,
   "titleBar.activeBackground": goldColors.background,
   "gitDecoration.addedResourceForeground": goldColors.diamond,
   "gitDecoration.conflictingResourceForeground": goldColors.tanzanite,
