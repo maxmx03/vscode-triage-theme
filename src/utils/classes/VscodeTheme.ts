@@ -3,20 +3,20 @@ import fs from "fs";
 import tinycolor from "tinycolor2";
 
 import { ITheme } from "../interfaces";
-import { TColors } from "../types";
+import { TColors, Colors } from "../types";
 
 export default class VsCodeTheme implements ITheme {
   public name: string;
   public type: string;
   public semanticHighlighting: boolean;
-  public colors: object;
+  public colors: Colors;
   public tokenColors: Array<TColors>;
 
   constructor(
     semanticHighlighting?: boolean,
     name?: string,
     type?: string,
-    color?: object,
+    color?: Colors,
     tokenColors?: Array<TColors>
   ) {
     this.name = name ?? "";
@@ -36,7 +36,7 @@ export default class VsCodeTheme implements ITheme {
       colors: {
         ...theme.colors,
         "editor.background": tinycolor(theme.colors["editor.background"])
-          .saturate()
+          .saturate(5)
           .toHexString(),
       },
       tokenColors: theme.tokenColors.map((object) => {
@@ -58,13 +58,6 @@ export default class VsCodeTheme implements ITheme {
   makeThemeSoft(theme: VsCodeTheme): string {
     return JSON.stringify({
       ...theme,
-      colors: {
-        ...theme.colors,
-        "editor.background": tinycolor(theme.colors["editor.background"])
-          .darken(2)
-          .desaturate()
-          .toHexString(),
-      },
       tokenColors: theme.tokenColors.map((object) => {
         return {
           ...object,

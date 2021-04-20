@@ -1,11 +1,11 @@
-import { TColors } from "../types";
+import { TColors, Colors } from "../types";
 
 export interface ITheme {
   name: string;
   type: string;
   semanticHighlighting: boolean;
   semanticTokenColors?: object;
-  colors: object;
+  colors: Colors;
   tokenColors: Array<TColors>;
   writeJsonFile(theme: string, location: string): void;
   saveFile(folderName: string, fileName: string): string;

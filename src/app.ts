@@ -1,6 +1,6 @@
 import express from "express";
 
-import { darkDesert, darkAqua } from "./themes";
+import { darkDesert, darkAqua, goldAge } from "./themes";
 
 const app = express();
 const port = 4001;
@@ -22,6 +22,12 @@ app.get("/generate", (req, res) => {
     default: "Milianor-aqua.json",
     soft: "Milianor-aqua-soft.json",
     vibrant: "Milianor-aqua-vibrant.json",
+  });
+
+  goldAge.generateTheme({
+    default: "Milianor-gold.json",
+    soft: "Milianor-gold-soft.json",
+    vibrant: "Milianor-gold-vibrant.json",
   });
 
   res.redirect("/");
