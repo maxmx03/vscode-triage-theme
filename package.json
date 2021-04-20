@@ -4,7 +4,7 @@
   "description": "milianor theme for web developers",
   "publisher": "MaxMilianoDelCantoQuezada",
   "icon": "images/image.jpeg",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "engines": {
     "vscode": "^1.55.0"
   },
@@ -48,17 +48,17 @@
         "path": "./themes/Milianor-aqua-vibrant.json"
       },
       {
-        "label": "Milianor Gold Age",
+        "label": "Milianor Golden Age",
         "uiTheme": "vs-dark",
         "path": "./themes/Milianor-gold.json"
       },
       {
-        "label": "Milianor Gold Age Soft",
+        "label": "Milianor Golden Age Soft",
         "uiTheme": "vs-dark",
         "path": "./themes/Milianor-gold-soft.json"
       },
       {
-        "label": "Milianor Gold Age Vibrant",
+        "label": "Milianor Golden Age Vibrant",
         "uiTheme": "vs-dark",
         "path": "./themes/Milianor-gold-vibrant.json"
       }
