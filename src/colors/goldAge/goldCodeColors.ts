@@ -59,7 +59,7 @@ export const goldCodeColors: CodeColors = {
     source: colors.foreground,
   },
   vue: {
-    default: colors.turquoise,
+    default: colors.emerald,
     attribute: colors.diamond,
     types: colors.turquoise,
   },
