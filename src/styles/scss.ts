@@ -11,6 +11,7 @@ export const scss = ({ scss: sc }: CodeColors): Array<TColors> => {
       ],
       settings: {
         foreground: sc.keyword,
+        fontStyle: "normal"
       },
     },
     {
@@ -29,6 +30,7 @@ export const scss = ({ scss: sc }: CodeColors): Array<TColors> => {
         "meta.definition.variable.css",
         "punctuation.separator.list.comma.css",
         "punctuation.separator.key-value.css",
+        "entity.other.keyframe-offset.css",
       ],
       settings: {
         foreground: sc.meta,
@@ -43,6 +45,7 @@ export const scss = ({ scss: sc }: CodeColors): Array<TColors> => {
         "meta.definition.variable.scss",
         "punctuation.separator.list.comma.scss",
         "punctuation.separator.key-value.scss",
+        "entity.other.keyframe-offset.scss",
       ],
       settings: {
         foreground: sc.metaScss,
@@ -95,9 +98,10 @@ export const scss = ({ scss: sc }: CodeColors): Array<TColors> => {
     },
     {
       name: "SCSS Property Value",
-      scope: ["meta.property-value"],
+      scope: ["support.constant.property-value.css"],
       settings: {
         foreground: sc.propertyValue,
+        fontStyle: "normal"
       },
     },
     {

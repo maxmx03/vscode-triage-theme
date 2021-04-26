@@ -549,15 +549,6 @@ export const languages = ({ languages: ls }: CodeColors): Array<TColors> => {
       },
     },
     {
-      name:
-        "Powershell constants mistakenly scoped to `support`, rather than `constant` (edge)",
-      scope: ["support.constant"],
-      settings: {
-        fontStyle: "normal",
-        foreground: ls.shellConstant,
-      },
-    },
-    {
       name: "Makefile prerequisite names",
       scope: ["meta.scope.prerequisites.makefile"],
       settings: {
