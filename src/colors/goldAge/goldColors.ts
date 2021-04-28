@@ -1,6 +1,6 @@
 export const goldColors = {
   background: "#252525",
-  foreground: "#fafafa",
+  foreground: "#e3e0cd",
   blackPearl: "#020811",
   marble: "#e3e0cd",
   silver: "#C0C0C0",
@@ -10,8 +10,9 @@ export const goldColors = {
   bronze: "#cd7f32",
   emerald: "#50c878",
   turquoise: "#40e0d0",
-  diamond: "#b9f2ff",
+  diamond: "#7ad9f5",
   tanzanite: "#9966ff",
   ruby: "#e0115f",
   gemstone: "#fe3e8b",
+  green: "#54e346",
 };

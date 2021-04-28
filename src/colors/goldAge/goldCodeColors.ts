@@ -13,7 +13,7 @@ export const goldCodeColors: CodeColors = {
     modifier: colors.ruby,
     storage: colors.ruby,
     function: colors.gold,
-    objectMethod: colors.diamond,
+    objectMethod: colors.green,
     class: colors.turquoise,
     types: colors.turquoise,
     this: colors.tanzanite,
