@@ -1,8 +1,8 @@
 {
-  "name": "triage theme",
+  "name": "triage-theme",
   "displayName": "Triage theme",
   "description": "A theme for Visual Studio Code",
-  "publisher": "Max Del Canto",
+  "publisher": "Milianor",
   "icon": "images/triage.png",
   "version": "4.0.7",
   "engines": {
@@ -65,7 +65,7 @@
     ]
   },
   "scripts": {
-    "publish": "yarn vsce package && yarn vsce publish"
+    "publish": "pnpm vsce package && pnpm vsce publish"
   },
   "devDependencies": {
     "vsce": "^1.87.1"
