@@ -1,4 +1,4 @@
-export const desertColors = {
+module.exports = {
   background: "#212121",
   foreground: "#fafafa",
   green: "#a8df65",
@@ -15,10 +15,4 @@ export const desertColors = {
   purple: "#bf68f6",
   grey: "#bbbbbb",
   white: "#fafafa",
-};
-
-
-export const desertSpecial = {
-  vue: "#42b983",
-  php: "#a06ee1",
 };

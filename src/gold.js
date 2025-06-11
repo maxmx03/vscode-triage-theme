@@ -1,4 +1,4 @@
-export const goldColors = {
+module.exports = {
   background: "#252525",
   foreground: "#e3e0cd",
   blackPearl: "#020811",

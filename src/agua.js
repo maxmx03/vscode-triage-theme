@@ -1,4 +1,4 @@
-export const aquaColors = {
+module.exports = {
   background: "#2b2e4a",
   foreground: "#f6efeb",
   chartreuse: "#94fc13",
@@ -22,5 +22,3 @@ export const aquaColors = {
   dawnPink: "#f6efeb",
   black: "#000",
 };
-
-// colors names by: https://imagecolorpicker.com/color-code/94fc13
